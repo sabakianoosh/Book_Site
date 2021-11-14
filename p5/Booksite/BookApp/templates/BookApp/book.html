@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+body {
+  background-color: #c6dae0;
+}
+       
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+  
+  
+  </body>
+
+  <a href="http://127.0.0.1:8000/" class="button">Home</a>
+
+{% for book in books %}
+
+<div class="w3-container">
+ 
+
+  <div class="w3-panel w3-gray" >
+    <center>
+    <h1 class=center>{{book.title}}</h1>
+  </center>
+  </div>
+
+  <div class="w3-panel w3-border w3-border-red">
+    <p >{{book.genre}}</p>
+ </div>
+
+ <div class="w3-panel w3-border-top w3-border-bottom w3-border-green">
+  <p >{{book.author}}</p>
+ </div>
+  <div class="w3-panel w3-border-left w3-pale-red w3-border-red">
+    <p>{{book.summary}}</p>
+   </div>
+ 
+   
+  <p><br><br><br><br></p>
+ 
+ 
+ {% endfor %}
+
+ 
+ 
+
+</body>
+</html>
